@@ -1,12 +1,46 @@
 <?php
+//var_dump($_POST);
 $floor = $_POST['floor'];
 $room = $_POST['room'];
+$room_lists = [];
 
+for ($i=1; $i <= $floor; $i++){
+    for ($v=1; $v <= $room; $v++){
+        if(isset($_POST['exception-four'])){
+            if($v === 4){
+                continue;
+            }
+        }
+        if(isset($_POST['exception-nine'])){
+            if($v === 9){
+                continue;
+            }
+        }
+        $room_lists[] .= $i.sprintf('%02d',$v).'<br>';
+    }
+}
 ?>
 
-<?php for ($i=1; $i<=$floor; $i++){ ?>
-    <?php for ($v=1; $v<=$room; $v++){ ?>
-        <?php echo $i.sprintf('%02d',$v).'<br>'; ?>
-    <?php } ?>
-<?php } ?>
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>点検チェッカー</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="script" href="js/create_box.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="box-container">
+    <?php foreach ($room_lists as $room_list) : ?>
+        <div class="container">
+            <a href="#" class="btn-flat-border btn">
+                <p class="room-number">
+                    <?php echo $room_list;?>
+                </p>
+            </a>
+        </div>
+    <?php endforeach; ?>
+</div>
+</body>
+</html>

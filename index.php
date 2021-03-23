@@ -29,10 +29,18 @@
                 <?php } ?>
             </select>
         </div>
+        <div class="element_wrap">
+            <label>4号室なしを考慮する</label>
+            <input type="checkbox" name="exception-four" value="1" checked="checked">
+        </div>
+
+        <div class="element_wrap">
+            <label>9号室なしを考慮する</label>
+            <input type="checkbox" name="exception-nine" value="1" checked="checked">
+        </div>
         <input  class="setting" type="submit" name="btn_confirm" value="設定する">
     </form>
 </div>
-
 
 </body>
 </html>
