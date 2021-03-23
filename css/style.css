@@ -1,0 +1,24 @@
+h1 {
+    font-weight: normal;
+    font-size: 70px;
+}
+.main-container {
+    text-align: center;
+    margin-top: 500px;
+    touch-action: none;
+}
+.setting {
+    margin-top: 25px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #c8efef;
+}
+label {
+    font-size: 40px;
+}
+.wf-nikukyu {
+    font-family: Nikukyu;
+}
+.wf-nicomoji {
+    font-family: Nico Moji;
+}

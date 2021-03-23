@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nikukyu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <title>てんけんチェッカー</title>
+</head>
+<body>
+<div class="main-container">
+    <h1 class="wf-nikukyu">てんけんチェッカー</h1>
+    <?php //var_dump($_POST); ?>
+    <form method="post" action="confirm.php">
+        <div class="element_wrap">
+            <label class="wf-nicomoji">かいすう</label>
+            <select name="floor">
+                <?php for ($i=1; $i<=50; $i++) {?>
+                    <option name="floor" value="<?php echo $i ?>"><?php echo $i.'階' ?></option>
+                <?php } ?>
+            </select>
+        </div>
+        <div class="element_wrap">
+            <label class="wf-nicomoji">へやすう</label>
+            <select name="room">
+                <?php for ($i=1; $i<=30; $i++) {?>
+                    <option name="room" value="<?php echo $i ?>"><?php echo $i.'号室' ?></option>
+                <?php } ?>
+            </select>
+        </div>
+        <input  class="setting" type="submit" name="btn_confirm" value="設定する">
+    </form>
+</div>
+
+
+</body>
+</html>
