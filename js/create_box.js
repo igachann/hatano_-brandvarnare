@@ -1,7 +1,7 @@
 
 $(function(){
     $('.btn').on('click', function(event){
-        event.preventDefault();
+        // event.preventDefault();
         $(this).toggleClass('active');
     });
 });

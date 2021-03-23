@@ -25,7 +25,7 @@ for ($i=1; $i <= $floor; $i++){
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>点検チェッカー</title>
+    <title>てんけんチェッカー</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="script" href="js/create_box.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
