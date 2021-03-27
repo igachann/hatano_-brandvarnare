@@ -39,25 +39,28 @@
 
         <div class="element_wrap">
             <label class="wf-nicomoji">セットバックを考慮する</label>
+            <button id="setback" type="button">+</button>
             <select name="setback_floor">
+                <option disabled selected value>階数を選択</option>
                 <?php for ($i=1; $i<=50; $i++) {?>
                     <option name="setback_floor" value="<?php echo $i ?>"><?php echo $i.'階' ?></option>
                 <?php } ?>
             </select>
 
             <select name="setback_start_room">
+                <option disabled selected value>部屋を選択</option>
                 <?php for ($i=1; $i<=30; $i++) {?>
                     <option name="setback_start_room" value="<?php echo $i ?>"><?php echo $i.'号室' ?></option>
                 <?php } ?>
             </select>
             〜
             <select name="setback_end_room">
+                <option disabled selected value>部屋を選択</option>
                 <?php for ($i=1; $i<=30; $i++) {?>
                     <option name="setback_end_room" value="<?php echo $i ?>"><?php echo $i.'号室' ?></option>
                 <?php } ?>
             </select><br>
-
-
+        </div>
             <input  class="setting" type="submit" name="btn_confirm" value="設定する">
     </form>
 </div>

@@ -1,5 +1,4 @@
 <?php
-var_dump($_POST);
 $floor = $_POST['floor'];
 $room = $_POST['room'];
 $setback_floor = $_POST['setback_floor'];
