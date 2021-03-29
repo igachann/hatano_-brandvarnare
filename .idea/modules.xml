@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hatano_brandvarnare.iml" filepath="$PROJECT_DIR$/.idea/hatano_brandvarnare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hatano.iml" filepath="$PROJECT_DIR$/.idea/hatano.iml" />
     </modules>
   </component>
 </project>
